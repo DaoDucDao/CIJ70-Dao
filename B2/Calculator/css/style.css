@@ -1,0 +1,37 @@
+.input {
+    flex-direction: column;
+    display: flex;
+    width: 200px;
+}
+.input input {
+    text-align: center;
+    border-radius: 10px;
+}
+.result{
+    background-color: white;
+    width: 500px;
+    height: 100px;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    border: 2px solid black;
+}
+.result p {
+    margin: 0 auto;
+    font-size: 40px;
+    color: red;
+}
+.down {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.down button {
+    font-size: 10px;
+    border-radius: 15px;
+    width: 40px;
+    height: 20px;
+    background-color: cyan;
+}
+

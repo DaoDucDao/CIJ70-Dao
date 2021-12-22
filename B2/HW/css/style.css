@@ -1,0 +1,12 @@
+body{
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+#color{
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+}
