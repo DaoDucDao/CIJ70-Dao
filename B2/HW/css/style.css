@@ -10,3 +10,20 @@ body{
     height: 100px;
     margin: 50px auto;
 }
+
+#clock{
+    width: 1000px;
+    height: 50px;
+    border: 5px solid cyan;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: magenta;
+    margin: 50px;
+}
+
+.time p{
+    color: red;
+    font-size: 200x;
+    margin: auto 0;
+}

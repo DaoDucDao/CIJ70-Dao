@@ -35,3 +35,31 @@ function triangle (){
     }
 }
 triangle();
+
+// 
+
+function showTime(){
+    let clock = document.getElementById('clock');
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    let period = 'AM';
+
+    if (hours > 12){
+        hours -= 12;
+        period = 'PM';
+    }
+    if (hours === 0){
+        hours = 12;
+        period = 'AM';
+    }
+
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    let time = hours +':' + minutes + ':' + seconds + ' ' + period; 
+    clock.textContent = time ;
+}
+setInterval(showTime, 1000);
+showTime();
