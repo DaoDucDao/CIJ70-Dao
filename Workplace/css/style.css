@@ -16,7 +16,8 @@ body {
 .img-cover {
 	width: 60%;
 	height: 100vh;
-	background: url('https://source.unsplash.com/random') no-repeat center / cover;
+	background: url('https://as2.ftcdn.net/v2/jpg/01/19/11/55/1000_F_119115529_mEnw3lGpLdlDkfLgRcVSbFRuVl6sMDty.jpg')
+		no-repeat center / cover;
 }
 
 .form-container {
