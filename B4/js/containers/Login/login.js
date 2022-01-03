@@ -1,6 +1,7 @@
 import buttonComponent from '../../components/button.js';
 import inputComponent from '../../components/input.js';
 import { checkEmail, checkPassword } from '../../common/validation.js';
+
 class loginScreen {
 	$container;
 
@@ -11,6 +12,9 @@ class loginScreen {
 	$formLogin;
 	$buttonSubmit;
 	$titleScreen;
+
+	$registerText;
+	$registerLink;
 
 	constructor() {
 		this.$container = document.createElement('div');
@@ -46,6 +50,15 @@ class loginScreen {
 			['btn', 'btn-primary', 'd-block', 'mt-2'],
 			'submit'
 		);
+
+		this.$registerText = document.createElement('p');
+		this.$registerText.classList.add('regis-text');
+		this.$registerText.innerText = 'Create an account!';
+
+		this.$registerLink = document.createElement('a');
+		this.$registerLink.innerText = 'Register';
+		this.$registerLink.target = '_blank';
+		this.$registerLink.setAttribute('href', './SignUp.html');
 	}
 	handleSubmit = (e) => {
 		e.preventDefault();
@@ -71,7 +84,9 @@ class loginScreen {
 			this.$titleScreen,
 			this.$email.renderInput(),
 			this.$password.renderInput(),
-			this.$buttonSubmit.renderButton()
+			this.$buttonSubmit.renderButton(),
+			this.$registerText,
+			this.$registerLink
 		);
 		this.$container.append(this.$formLogin, this.$imageCover);
 		return this.$container;
