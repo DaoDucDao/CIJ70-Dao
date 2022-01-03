@@ -8,6 +8,7 @@ export const checkEmail = (email) => {
 	}
 	return null;
 };
+
 export const checkPassword = (password) => {
 	if (!password || password.length === 0) {
 		return 'Password is required!';

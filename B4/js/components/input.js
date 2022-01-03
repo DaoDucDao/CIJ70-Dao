@@ -4,10 +4,8 @@ class inputComponent {
 	$containerInput;
 	$input;
 
-	// $name;
-	// $type;
-	// $id;
 	$error;
+
 	constructor(label, name, id, type) {
 		this.$container = document.createElement('div');
 		this.$container.classList.add('row', 'd-flex', 'flex-wrap', 'mt-4');
@@ -16,14 +14,14 @@ class inputComponent {
 		this.$containerInput.classList.add('col-8');
 
 		this.$label = document.createElement('label');
-		this.$label.classList.add('col-4', 'label-input');
 		this.$label.innerText = label;
+		this.$label.classList.add('col-4', 'label-input');
 
 		this.$input = document.createElement('input');
 		this.$input.classList.add('form-control');
 		this.$input.type = type;
-		this.$input.id = id;
 		this.$input.name = name;
+		this.$input.id = id;
 
 		this.$error = document.createElement('div');
 		this.$error.classList.add('error', 'mt-2', 'd-none');
@@ -41,6 +39,4 @@ class inputComponent {
 		return this.$container;
 	}
 }
-
 export default inputComponent;
-// if we dont use export default, put the import variable into {};
